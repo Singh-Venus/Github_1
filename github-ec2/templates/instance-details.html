@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EC2 Description</title>
+  </head>
+  <body>
+    <h1> AWS EC2 Instance Description</h1>
+    <ul>
+    <li><a href="https://docs.aws.amazon.com/">aws-doc</a></li>
+    </ul>
+    <table>
+    {% for key, value in instance.items() %}
+    <tr> {{ value }} </tr>
+    {% endfor %}
+    </table>
+    </body>
+    <style>
+       body {
+            background-image: url(../static/abcd.jpeg);
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-top:120px;
+            margin-bottom:50px;
+            background-size: cover;
+            filter: brightness(90%);
+        }
+
+
+
+        h1 {
+            font-family: Arial;
+            font-size: 3em;
+            color: green;
+           }
+
+
+    </style>
+</html>
