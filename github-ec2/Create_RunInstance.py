@@ -20,7 +20,7 @@ response = ec2.run_instances(
         'your security group id',
     ],
     EbsOptimized=True|False,
-    IamInstanceProfile={'your iam arn id',
+    IamInstanceProfile={'your iam arn Profile id',
             },
     InstanceInitiatedShutdownBehavior='start'|'stop'|'terminate'|'reboot',
 
